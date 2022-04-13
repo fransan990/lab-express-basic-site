@@ -1,0 +1,27 @@
+<div class="container">
+
+    <div class="row">
+            <h1>Drivers</h1>
+
+        {{#each players}}
+
+        <div class="col-4 mb-5 mt-5">
+
+            <div class="card text-center">
+                <img src="{{img}}" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h4 class="card-title">{{name}}</h4>
+                    <h5 class="card-title">{{lastname}}</h5>
+
+                    <p class="card-text">{{escuderia}}</p>
+                    <p class="card-text">{{points}}</p>
+
+                    {{!-- <a href="#" class="btn btn-primary">Go somewhere</a> --}}
+                </div>
+            </div>
+        </div>
+
+        {{/each}}
+    </div>
+
+</div>
